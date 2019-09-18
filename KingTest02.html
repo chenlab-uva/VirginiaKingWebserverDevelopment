@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>KING Web Server Developmental Instance</title> </head>
+
+<body bgcolor=#efefef background="../Flower03.jpeg">
+<br><br><br><br><br><br><br><br>
+<center>
+
+<table bgcolor=#efefef style="width:1000px;"><tr><td align=center>
+
+<table><tr>
+<td align=center><a href="https://med.virginia.edu/cphg/"><img src="../CPHG.png" width=300 height=130></a></td>
+<td> &nbsp  &nbsp  &nbsp  &nbsp  &nbsp &nbsp</td>
+<td align=right><a href="https://uvahealth.com/"><img src="../UVAHS.png" width=380 height=290></a></td>
+<td>&nbsp  &nbsp  &nbsp &nbsp  &nbsp  &nbsp  &nbsp  &nbsp</td>
+<td align=left><a href="https://med.virginia.edu/"><img src="../UVAMed.png" width=300 height=130></a></td>
+</tr></table>
+
+<font color=red size=+3><b>Developmental Instance Of Virginia <a href="http://people.virginia.edu/~wc9c/KING/" target=KING>KING</a> Server</b></font><br><br>
+
+<hr><br>
+
+
+
+<form action="/cgi-bin/RUN_KING_Test02.cgi" method="post" enctype="multipart/form-data">
+
+<center><font color=magenta size=+3><b>Genotype Data Uploading Options</font></font></center><br>
+
+
+<center><b><font color=darkgreen size=+3>Option 1:</font> If the *.bed File Is Less Than 4 GB in Size, and the Associated *.bim and *.fam Files are also Available, <br>Please Upload All the Three Sets of Genotype Data Files through the Following GUIs:</b></center><br>
+
+<table><tr>
+
+<td><p><b>Upload Binary File --- <a href="https://genome.ucsc.edu/FAQ/FAQformat.html#format1" target=BED>*.bed</a> :</b><br><br> <input type="file" name="bed" /></p></td>
+
+<td><p><b>Upload Text File --- <a href="http://cubre.covenantuniversity.edu.ng/wp-content/uploads/2014/07/H3ABionet_2014_GWAS_2_Plink_Data_Format.pdf" target=BIM>*.bim</a> :</b><br><br> <input type="file" name="bim" /></p></td>
+
+<td><p><b>Upload Text File --- <a href="http://www.cog-genomics.org/plink/1.9/formats#fam" target=FAM>*.fam</a> :</b><br><br>  <input type="file" name="fam" /></p></td>
+
+</tr></table>
+
+<hr><br>
+
+<center><p><b><font color=darkgreen size=+3>Option 2:</font> If the Whole Genotype Data File Is More Than 5 GB in Size, Please Upload a <a href="http://people.virginia.edu/~wc9c/KING/ex.tar.gz">*.tar.gz</a>  
+File (Example <br>Enclosed on the Link) up to 4 GB in Size  ------
+(First <a href="https://en.wikipedia.org/wiki/Tar_(computing)">tar</a> the Data Folder,  and 
+then <a href="https://en.wikipedia.org/wiki/Gzip">gzip</a> it;<br> this way the Webserver Can Take up to 15 GB Raw Data for 
+Analysis:</b><br><br></center>
+
+<center><table><tr>
+<td align=center><input type="file" name="photo" /></td>
+</tr></table>
+
+<br><hr><br>
+
+<center><font color=magenta size=+3><b>KING Analysis Parameter Setting</font></font></center><br>
+
+<table><tr>
+<td align=center>
+
+
+<select name="Pedigree_Inference" size=1>
+<option value="Ancestry_Inference">Ancestry Inference</option>
+<option value="Homozygosity" selected>Run of Homozygosity</option>
+</select>
+&nbsp&nbsp&nbsp
+<input type = "checkbox" name = "related" checked>&nbsp&nbspRelative Inference (<font color=blue>Should Always Be Checked</font>)&nbsp&nbsp</td><td align=center>
+&nbsp&nbsp&nbsp
+<select name="Encryption" size=1>
+<option value="No_Encryption" selected>No Encryption</option>
+<option value="PKZIP">PKZIP/PKUNZIP 2.04c</option>
+<option value="Base64">Base64
+<option	value="AES128">AES128
+<option	value="AES192">AES192
+<option value="AES256">AES256
+
+</select><br>
+
+
+
+<!---
+<input type = "checkbox" name = "Ancestry_Inference">&nbsp&nbsp Ancestry Inference<b></b></td>
+--->
+
+</tr></table><br>
+
+<p><input type="submit" name="Submit" style="background-color:yellow;color:red;  width:280px; height:40px;"  value="Submit Web Form for KING Analysis" />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<input type="reset" name="Reset" style="background-color:yellow;color:red;  width:280px; height:40px;" value = "Reset Web Form with GUI Inputs"></p>
+</center>
+
+
+</form>
+<center><br><hr><br>
+
+<b>First Setup on August 21, 2019, Last Updated by <a href="http://people.virginia.edu/~xc3m/" target=Dr.XianfengJeffChen>Dr. Jeff Chen</a>
+(<a href="https://www.linkedin.com/in/xianfeng-jeff-chen-ph-d-50b36772" target=Dr.Xianfeng(Jef)fChen>
+<img src="../linkedin.png">&nbsp</a>
+<a href="https://twitter.com/XianfengC" target=Dr.JeffChen><img src="../twitter.png">&nbsp&nbsp</a>
+<a href="http://www.youtube.com/watch?v=KYQ2dPW5nEU" target=HGIntro><img src="../youtube.png"></a>)
+on September 11, 2019.</b><br>
+
+This KING Web System Was Officially Completed the Prototype and Developmental Stage on September 11, 2019.<br>
+For Science and Administrative Questions, Please Contact <a href="http://people.virginia.edu/~wc9c/CV.html">Dr. Wei-Min Chen</a>, 
+For Technical Support, Pleaase Contact <a href="http://people.virginia.edu/~xc3m/">Dr. Jeff Chen</a>.
+
+</center><br><br><br>
+
+</td></tr></table>
+</body>
+</html>
